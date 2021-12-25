@@ -3,8 +3,6 @@ package com.project.employee.domainImpl;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.UUID;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -15,18 +13,10 @@ import com.project.employee.entities.Employee;
 import com.project.employee.model.EmployeeModel;
 import com.project.employee.repositories.EmployeeRepositories;
 
-<<<<<<< HEAD
-import antlr.collections.List;
-@Component
-public class EmployeeDomainImpl implements EmployeeDomain {
-	
-	@Autowired
-=======
 @Component
 public class EmployeeDomainImpl implements EmployeeDomain {
 	@Autowired
 
->>>>>>> e3e78675c39f381089eb0f13b766e00d711a8d6a
 	private EmployeeRepositories empRepo;
 
 	public String addEmployee(EmployeeModel employeeModel) {
@@ -50,18 +40,7 @@ public class EmployeeDomainImpl implements EmployeeDomain {
 		return empModelList;
 	}
 
-<<<<<<< HEAD
-	@Override
-	public Employee deleteEmployee(UUID id) {
-		 Employee employee = empRepo.findById(id).get();
-		empRepo.deleteById(id);
-		return employee;
-	}
-
-  
-=======
 		
->>>>>>> e3e78675c39f381089eb0f13b766e00d711a8d6a
 	
 
 }
